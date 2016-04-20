@@ -16,4 +16,6 @@
 
 .title {
   font-size: 24px;
+  background-color: grey;
+  border-radius: 10px;
 }
