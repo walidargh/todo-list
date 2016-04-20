@@ -23,7 +23,7 @@ var TodoDetailView = React.createClass({
     });
     return (
       <div>
-        <div className="body">{this.props.body}</div>
+        <div className="Todolist-body">{this.props.body}</div>
         {todoSteps}
         <input type="button" onClick={this.handleDestroy} value="Delete Todo"/>
       </div>

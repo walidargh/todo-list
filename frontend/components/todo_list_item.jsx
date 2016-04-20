@@ -26,11 +26,17 @@ var TodoListItem = React.createClass({
       detailView = <TodoDetailView body={this.props.body} id={this.props.id} />;
     }
     var done = this.props.done ? "Undone" : "Done";
+    
     return (
       <div>
-        <div onClick={this.handleToggleView} className="title">{this.props.title}</div>
+        <div onClick={this.handleToggleView} className="title">
+          {this.props.title}
+        </div>
+
         {detailView}
+
         <input type="button" onClick={this.handleToggleDone} value={done}/>
+
       </div>
     );
   }
